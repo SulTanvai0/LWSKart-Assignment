@@ -50,11 +50,6 @@ export const {
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      authorization: {
-        prompt: "consent",
-        access_type: "offline",
-        response_type: "code",
-      },
     }),
     FaceBookProvider({
       clientId: process.env.FACEBOOK_CLIENT_ID,
@@ -75,20 +70,6 @@ export const {
       }
       return true;
     },
-
-    async jwt({ token, user, account }) {
-      if (account && user) {
-        return {
-          accessToken: account?.access_token,
-          accessTokenExpires: Date.now() + account?.expires_in * 1000,
-          refreshToken: account?.refresh_token,
-        };
-      }
-      if (Date.now() < token?.accessTokenExpires) {
-        return token;
-      }
-    },
-    async session({ token, user }) {},
   },
   session: {
     strategy: "jwt",
