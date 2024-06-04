@@ -18,7 +18,7 @@ const LanguageBtn = () => {
         const newLanguage = language === "en" ? "bn" : "en";
         setLanguage(newLanguage);
         const newPathName = pathName.replace(`/${language}`, `/${newLanguage}`);
-        router.refresh()
+        router.refresh(newPathName);
         router.replace(newPathName);
     };
 

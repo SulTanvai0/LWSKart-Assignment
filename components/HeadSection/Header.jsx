@@ -74,6 +74,7 @@ const WishList = async ({ user, name, lang }) => {
 };
 
 
+
 const Cart = async ({ user, name, lang }) => {
 
     let cartList = null;

@@ -34,7 +34,7 @@ const Category = async ({ lang }) => {
                                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                 />
                             </div>
-                            <Link href={`/category/${cate.link}`} className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-opacity-20 to-gray-500 to-opacity-40 flex items-center justify-center text-3xl text-[#fd3d57] font-roboto font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <Link href={`${lang}/category/${cate.link}`} className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-opacity-20 to-gray-500 to-opacity-40 flex items-center justify-center text-3xl text-[#fd3d57] font-roboto font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 
                                 {cate.name}
 

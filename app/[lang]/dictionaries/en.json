@@ -85,25 +85,7 @@
       "delete": "Delete"
     }
   },
-  "personal": {
-    "title": "Update your profile",
-    "name": "Full Name",
-    "email": "Email Address",
-    "phone": "Phone Number",
-    "update": "Update",
-    "image": "Drop image here",
-    "choose": "Choose profile photo",
-    "empty": "You can't empty submit",
-    "phoneInvalid": "This Phone Number is invalid"
-  },
-  "wishlist": {
-    "availability": "Availability",
-    "deleteMessage": "Are You Sure Delete This Item",
-    "no": "No, cancel",
-    "yes": "Yes",
-    "empty": "You have not wishlist.",
-    "wrong": "Something went wrong"
-  },
+
   "cart": {
     "empty": "You have not cart.",
     "checkout": "Checkout",
@@ -142,18 +124,6 @@
     "orLoginWith": "Or login with",
     "noAccountMessage": "Don't have an account?",
     "registerNow": "Register now"
-  },
-
-  "deleteModal": {
-    "no": "No, cancel",
-    "yes": "Yes",
-    "close": "Close modal"
-  },
-  "stock": {
-    "rightNow": "The stock has just run out"
-  },
-  "auth": {
-    "login": "Please login first"
   },
   "checkout": {
     "checkout": "CheckOut",
