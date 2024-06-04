@@ -1,0 +1,225 @@
+{
+  "headers": {
+    "logo": "en",
+    "search": "Search",
+    "wishlist": "Wishlist",
+    "cart": "Cart",
+    "profile": "profile"
+  },
+  "navBar": {
+    "home": "Home",
+    "shop": "Shop",
+    "about": "About us",
+    "contact": "Contact Us",
+    "login": "Login",
+    "logout": "Logout",
+    "category": "All Categories"
+  },
+  "hero": {
+    "title": "Best Collection ",
+    "title1": "For Home Decoration",
+    "subTitle": "Transform Your Home with Timeless Elegance, Unmatched Comfort, Innovative Design, and Exceptional Craftsmanship",
+    "button": "Shop Now"
+  },
+  "feature": {
+    "shipping": "Free Shipping",
+    "order": "Order over $200",
+    "money": "Money Returns",
+    "ret": "30 days money returns",
+    "support": "24/7 Support",
+    "customer": "Customer support"
+  },
+  "category": {
+    "category": "SHOP BY CATEGORY",
+    "BedRoom": "Bed Room",
+    "Mattress": "Mattress",
+    "Outdoor": "Outdoor",
+    "Sofa": "Sofa",
+    "LivingRoom": "Living Room",
+    "Kitchen": "Kitchen"
+  },
+  "newArrival": "TOP NEW ARRIVAL",
+  "trend": "TRENDING PRODUCTS",
+  "noFound": "No data Found",
+
+  "product": {
+    "addToCart": "Add To Cart",
+    "showCart": "Show Cart",
+    "wishlistTitleAdd": "add to wishlist",
+    "wishlistTitleRemove": "remove from wishlist",
+    "viewProduct": "view product",
+    "stockOut": "Out of Stock"
+  },
+
+  "productDetails": {
+    "brand": "Brand",
+    "category": "Category",
+    "sku": "SKU",
+    "productDetails": "Product Details",
+    "relatedProducts": "Related Products",
+    "product": "Product",
+    "availability": "Availability",
+    "inStock": "product remaining"
+  },
+  "sidebar": {
+    "categories": "Categories",
+    "price": "Price",
+    "filter": "Filter"
+  },
+
+  "profile": {
+    "personal": "Personal Profile",
+    "addNewAddress": "Add New Address",
+    "addNewPaymentMethod": "Add New Payment Method",
+    "orderHistory": "Order History",
+    "addressBook": "Address Book",
+    "seeInvoice": "See Invoice",
+    "edit": "edit",
+    "address": {
+      "name": "Name",
+      "street": "Street",
+      "city": "City",
+      "state": "State",
+      "zip": "Zip",
+      "phone": "Phone",
+      "delete": "Delete"
+    }
+  },
+  "personal": {
+    "title": "Update your profile",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "update": "Update",
+    "image": "Drop image here",
+    "choose": "Choose profile photo",
+    "empty": "You can't empty submit",
+    "phoneInvalid": "This Phone Number is invalid"
+  },
+  "wishlist": {
+    "availability": "Availability",
+    "deleteMessage": "Are You Sure Delete This Item",
+    "no": "No, cancel",
+    "yes": "Yes",
+    "empty": "You have not wishlist.",
+    "wrong": "Something went wrong"
+  },
+  "cart": {
+    "empty": "You have not cart.",
+    "checkout": "Checkout",
+    "deleteMessage": "Are You Sure Delete This Item"
+  },
+  "register": {
+    "createAccount": "Create an account",
+    "message": "Register for new customer",
+    "fullNameLabel": "Full Name",
+    "fullNamePlaceholder": "fulan fulana",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "youremail.@domain.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "*******",
+    "confirmPasswordLabel": "Confirm password",
+    "confirmPasswordPlaceholder": "*******",
+    "error": "An error occurred",
+    "agreementText": "I have read and agree to the",
+    "termsConditions": "terms & conditions",
+    "createAccountButton": "Create account",
+    "loginWith": "Or login with",
+    "alreadyHaveAccountMessage": "Already have an account?",
+    "loginNow": "Login now"
+  },
+  "login": {
+    "login": "Login",
+    "message": "Welcome back",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "youremail@domain.com",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "*******",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password",
+    "error": "An error occurred",
+    "loginButton": "Login",
+    "orLoginWith": "Or login with",
+    "noAccountMessage": "Don't have an account?",
+    "registerNow": "Register now"
+  },
+
+  "deleteModal": {
+    "no": "No, cancel",
+    "yes": "Yes",
+    "close": "Close modal"
+  },
+  "stock": {
+    "rightNow": "The stock has just run out"
+  },
+  "auth": {
+    "login": "Please login first"
+  },
+  "checkout": {
+    "checkout": "CheckOut",
+    "amount": "Total Amount",
+    "quantity": "Total Quantity",
+    "btnText": "Proceed to Payment"
+  },
+  "payment": {
+    "payment": "Payment",
+    "amount": "Total Amount",
+    "quantity": "Total Quantity",
+    "btnText": "Pay now",
+    "shipping": "Select Shipping Address",
+    "billing": "Select Billing Address",
+    "summary": "Order Summary",
+    "method": "Select Payment Method",
+    "addShippingAddress": "Add Shipping Address",
+    "addNewAddress": "Add New Address",
+    "orderSummary": "Order Summary",
+    "addBillingAddress": "Add Billing Address",
+    "addPaymentMethod": "Add Payment Method",
+    "addPaymentMethodText": "Add Payment Method",
+    "addShippingAddressText": "Add Shipping Address",
+    "addBillingAddressText": "Add Billing Address",
+    "chooseShippingAddress": "Select Shipping Address",
+    "choosePaymentMethod": "Select Payment Method",
+    "chooseBillingAddress": "Select Billing Address"
+  },
+  "invoiceData": {
+    "downloadInvoice": "Download Invoice",
+    "date": "Date",
+    "invoice": "Invoice",
+    "billingDetails": "Billing Details",
+    "shippingDetails": "Shipping Details",
+    "orderSummary": "Order Summary",
+    "product": "Product",
+    "quantity": "Quantity",
+    "unitPrice": "Unit Price",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "tax": "Tax",
+    "totalAmount": "Total",
+    "paidBy": "Paid by",
+    "cardEndingIn": "ending in",
+    "cardNumber": "Card Number",
+    "expiry": "Expiry",
+    "paymentDate": "Payment Date"
+  },
+  "footer": {
+    "copyright": {
+      "brand": "LWS",
+      "text": "Kart - All Right Reserved"
+    },
+    "text": "Transform Your Home with Timeless Elegance and Unmatched Comfort",
+    "solution": "SOLUTIONS",
+    "support": "SUPPORT",
+    "links": "USEFUL LINKS",
+    "company": "COMPANY",
+    "marketing": "Marketing",
+    "analytics": "Analytics",
+    "commerce": "Commerce",
+    "insights": "Insights",
+    "pricing": "Pricing",
+    "documentation": "Documentation",
+    "guides": "Guides",
+    "api": "API Status"
+  }
+}

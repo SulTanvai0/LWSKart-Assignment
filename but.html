@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Button</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-200 h-screen flex justify-center items-center">
+    <div
+      id="toggleButton"
+      class="relative inline-block w-24 h-10 rounded-full overflow-hidden bg-gray-300 cursor-pointer hover:bg-gray-400 transition duration-300"
+    >
+      <div
+        id="innerButton"
+        class="absolute w-12 h-10 bg-green-500 flex justify-center items-center transition-transform duration-300 rounded-full transform"
+      >
+        <span id="enLabel" class="text-white font-bold text-sm">English</span>
+        <span id="bnLabel" class="text-white font-bold text-sm hidden"
+          >Bangla</span
+        >
+      </div>
+    </div>
+
+    <script>
+      const toggleButton = document.getElementById("toggleButton");
+      const innerButton = document.getElementById("innerButton");
+      const enLabel = document.getElementById("enLabel");
+      const bnLabel = document.getElementById("bnLabel");
+
+      toggleButton.addEventListener("click", function () {
+        if (innerButton.classList.contains("translate-x-0")) {
+          innerButton.classList.remove("translate-x-0");
+          innerButton.classList.add("translate-x-full", "bg-blue-500");
+          enLabel.classList.add("hidden");
+          bnLabel.classList.remove("hidden");
+        } else {
+          innerButton.classList.remove("translate-x-full", "bg-blue-500");
+          innerButton.classList.add("translate-x-0", "bg-green-500");
+          enLabel.classList.remove("hidden");
+          bnLabel.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
