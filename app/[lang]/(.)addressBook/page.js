@@ -3,6 +3,10 @@ import { getUserByEmail } from "@/DataBase/quires";
 import { redirect } from "next/dist/server/api-utils";
 import InterCept from "./InterCept";
 
+export const metadata = {
+  title: "Add  Address",
+};
+
 const page = async () => {
   const session = await auth();
 

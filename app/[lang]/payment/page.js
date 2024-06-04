@@ -3,6 +3,9 @@ import PayPayment from "@/components/Payment/PayPayment";
 import { getPaymentMethods, getUserByEmail } from "@/DataBase/quires";
 import { redirect } from "next/navigation";
 import { getDictionary } from "../disctionaries";
+export const metadata = {
+  title: "Payment - LWsKart",
+};
 
 const PaymentPage = async ({ params: { lang } }) => {
   const session = await auth();

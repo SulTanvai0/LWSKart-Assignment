@@ -2,6 +2,10 @@ import { auth } from "@/auth";
 import AddPaymentMethodForm from "@/components/Payment/AddPaymentMethodForm";
 import { getUserByEmail } from "@/DataBase/quires";
 
+export const metadata = {
+  title: "Add your payment method",
+};
+
 const page = async () => {
   const session = await auth();
 

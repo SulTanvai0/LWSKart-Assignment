@@ -14,10 +14,13 @@ export default async function RootLayout({ children, params: { lang } }) {
     <>
       <LanguageProvider lang={lang}>
         <Header lang={lang} />
+        {console.log("Heading section loaded")}
         <Nav lang={lang} />
+        {console.log("Nav section loaded")}
         <div id="modal-root-content" />
         {children}
         <Footer lang={lang} />
+        {console.log("Footer section loaded")}
       </LanguageProvider>
     </>
   );

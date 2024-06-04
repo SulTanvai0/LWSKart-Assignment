@@ -3,6 +3,9 @@ import Breadcrumb from "@/components/Shop/Breadcrumb";
 import Shop from "@/components/Shop/Shop";
 import { getUserByEmail } from "@/DataBase/quires";
 import { getDictionary } from "../disctionaries";
+export const metadata = {
+  title: "Shop - LWsKart",
+};
 
 const ShopPage = async ({ params: { lang } }) => {
   const session = await auth();

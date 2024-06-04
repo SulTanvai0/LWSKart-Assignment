@@ -1,8 +1,16 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "Khana Khazana - All Recipe",
-  description: "Khana Khazana app here you will find food recipe",
+  title: "About - LWsKart",
+  openGraph: {
+    images: [
+      {
+        url: `https://lws-assignment-m-8.vercel.app/api/og?title=LWsKart - About Us `,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 const AboutPage = () => {

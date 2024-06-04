@@ -3,6 +3,10 @@ import Wishlist from "@/components/CheckOut/Wishlist";
 import { getUserByEmail, getWishListData } from "@/DataBase/quires";
 import { redirect } from "next/navigation";
 
+export const metadata = {
+  title: "WishList - LWsKart",
+};
+
 const WishListPage = async () => {
   const session = await auth();
 

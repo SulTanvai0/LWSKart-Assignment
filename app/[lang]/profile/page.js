@@ -9,6 +9,10 @@ import {
 import { redirect } from "next/navigation";
 import { getDictionary } from "../disctionaries";
 
+export const metadata = {
+  title: "Profile",
+};
+
 const ProfilePage = async ({ params: { userId, lang } }) => {
   const session = await auth();
 

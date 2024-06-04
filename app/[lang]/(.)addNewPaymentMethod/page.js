@@ -2,6 +2,10 @@ import { auth } from "@/auth";
 import { getUserByEmail } from "@/DataBase/quires";
 import InterCept from "./InterCept";
 
+export const metadata = {
+  title: "Add your payment method",
+};
+
 const page = async () => {
   const session = await auth();
 

@@ -3,6 +3,10 @@ import CartList from "@/components/CheckOut/CartList";
 import { getCartListData, getUserByEmail } from "@/DataBase/quires";
 import { redirect } from "next/navigation";
 
+export const metadata = {
+  title: "Cart",
+};
+
 const CartListPage = async ({ params: { userId } }) => {
   const session = await auth();
 

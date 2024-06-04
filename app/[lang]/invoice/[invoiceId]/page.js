@@ -3,6 +3,9 @@ import Invoice from "@/components/Invoice/Invoice";
 import { getInvoiceById, getUserByEmail } from "@/DataBase/quires";
 import { redirect } from "next/navigation";
 import { getDictionary } from "../../disctionaries";
+export const metadata = {
+  title: "Invoice",
+};
 
 const Page = async ({ params: { invoiceId, lang } }) => {
   const session = await auth();
