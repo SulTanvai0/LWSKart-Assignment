@@ -8,9 +8,9 @@ export async function GET(request, { params }) {
 
   try {
     const res = await userModel.findOne({ _id });
-    return Response.json({ status: 200, data: res });
+    return new Response.json({ status: 200, data: res });
   } catch (er) {
     console.log(er.message);
-    return Response.json({ error: er.message });
+    return new Response.json({ error: er.message });
   }
 }

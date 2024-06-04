@@ -10,10 +10,10 @@ export async function GET(request, { params }) {
     const res = await wishListsModel.find({
       $or: [{ userId: paramId }, { productId: paramId }],
     });
-    return Response.json({ status: 200, data: res });
+    return new Response.json({ status: 200, data: res });
   } catch (er) {
     console.log(er.message);
-    return Response.json({ error: er.message });
+    return new Response.json({ error: er.message });
   }
 }
 
@@ -23,10 +23,10 @@ export async function POST(request) {
 
   try {
     const res = await wishListsModel.create(requestBody);
-    return Response.json({ status: 200, data: res });
+    return new Response.json({ status: 200, data: res });
   } catch (er) {
     console.log(er.message);
-    return Response.json({ error: er.message });
+    return new Response.json({ error: er.message });
   }
 }
 
@@ -37,9 +37,9 @@ export async function DELETE(request, { params }) {
 
   try {
     const res = await wishListsModel.deleteOne({ _id });
-    return Response.json({ status: 200, data: res });
+    return new Response.json({ status: 200, data: res });
   } catch (er) {
     console.log(er.message);
-    return Response.json({ error: er.message });
+    return new Response.json({ error: er.message });
   }
 }

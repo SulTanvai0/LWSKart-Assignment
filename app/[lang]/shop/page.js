@@ -4,7 +4,7 @@ import Shop from "@/components/Shop/Shop";
 import { getUserByEmail } from "@/DataBase/quires";
 import { getDictionary } from "../disctionaries";
 export const metadata = {
-  title: "Shop - LWsKart",
+  title: "Shop - LWSKart",
 };
 
 const ShopPage = async ({ params: { lang } }) => {

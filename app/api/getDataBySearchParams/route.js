@@ -45,7 +45,7 @@ export async function GET(request, { params }) {
     const totalDocs = await ProductModel.countDocuments(match);
     const totalPages = Math.ceil(totalDocs / limit);
 
-    return Response.json({
+    return new Response.json({
       status: 200,
       currentPage: page,
       totalDocs,
@@ -54,6 +54,6 @@ export async function GET(request, { params }) {
     });
   } catch (er) {
     console.log(er.message);
-    return Response.json({ error: er.message });
+    return new Response.json({ error: er.message });
   }
 }
