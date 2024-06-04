@@ -8,7 +8,7 @@ export async function POST(request) {
   try {
     postBody = await request.json();
   } catch (error) {
-    return new Response(JSON.stringify({ error: "Invalid JSON" }), {
+    return  Response(JSON.stringify({ error: "Invalid JSON" }), {
       status: 400,
     });
   }
@@ -16,7 +16,7 @@ export async function POST(request) {
   const { productId, quantity } = postBody;
 
   if (!productId || typeof quantity !== "number") {
-    return new Response(JSON.stringify({ error: "Invalid input" }), {
+    return  Response(JSON.stringify({ error: "Invalid input" }), {
       status: 400,
     });
   }
@@ -24,14 +24,14 @@ export async function POST(request) {
   try {
     const findProduct = await ProductModel.findOne({ _id: productId });
     if (!findProduct) {
-      return new Response(JSON.stringify({ error: "Product not found" }), {
+      return  Response(JSON.stringify({ error: "Product not found" }), {
         status: 404,
       });
     }
 
     const newStock = findProduct.inStock - Number(quantity);
     if (newStock < 0) {
-      return new Response(JSON.stringify({ error: "Insufficient stock" }), {
+      return  Response(JSON.stringify({ error: "Insufficient stock" }), {
         status: 400,
       });
     }
@@ -41,12 +41,12 @@ export async function POST(request) {
       { inStock: newStock }
     );
 
-    return new Response(JSON.stringify({ status: 200, data: res }), {
+    return  Response(JSON.stringify({ status: 200, data: res }), {
       status: 200,
     });
   } catch (error) {
     console.error(error.message);
-    return new Response(JSON.stringify({ error: error.message }), {
+    return  Response(JSON.stringify({ error: error.message }), {
       status: 500,
     });
   }

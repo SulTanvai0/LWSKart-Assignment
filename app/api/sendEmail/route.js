@@ -27,12 +27,12 @@ export async function POST(request) {
       html: htmlBody,
     });
 
-    return new Response(
+    return  Response(
       JSON.stringify({ message: "email sent successfully " }),
       { status: 200 }
     );
   } catch (err) {
-    return new Response(JSON.stringify({ error: err.message }), {
+    return  Response(JSON.stringify({ error: err.message }), {
       status: 404,
     });
   }

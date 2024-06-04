@@ -9,10 +9,10 @@ export async function GET(request, { params }) {
   try {
     const res = await paymentMethodsModel.find({ userId: paramId });
 
-    return new Response.json({ status: 200, data: res });
+    return  Response.json({ status: 200, data: res });
   } catch (er) {
     console.log(er.message);
-    return new Response.json({ error: er.message });
+    return  Response.json({ error: er.message });
   }
 }
 
@@ -22,10 +22,10 @@ export async function POST(request) {
 
   try {
     const res = await paymentMethodsModel.create(requestBody);
-    return new Response.json({ status: 200, data: res });
+    return  Response.json({ status: 200, data: res });
   } catch (er) {
     console.log(er.message);
-    return new Response.json({ error: er.message });
+    return  Response.json({ error: er.message });
   }
 }
 
@@ -36,9 +36,9 @@ export async function DELETE(request, { params }) {
 
   try {
     const res = await paymentMethodsModel.deleteOne({ _id });
-    return new Response.json({ status: 200, data: res });
+    return  Response.json({ status: 200, data: res });
   } catch (er) {
     console.log(er.message);
-    return new Response.json({ error: er.message });
+    return  Response.json({ error: er.message });
   }
 }
