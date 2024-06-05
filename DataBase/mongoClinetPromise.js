@@ -1,3 +1,4 @@
+'use server'
 import { MongoClient } from "mongodb";
 
 var _mongomongoClientPromise;
