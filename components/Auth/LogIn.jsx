@@ -66,6 +66,7 @@ const LogIn = ({ user, names, lang }) => {
                     const user = await getUserByEmail(email);
                     localStorage.setItem("userIdLocal", user?._id)
                     setLoading(true)
+                    localStorage.clear();
                     return router.push(isNavigate);
                 }
 

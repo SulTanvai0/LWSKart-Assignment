@@ -137,6 +137,7 @@ const PayPayment = ({ paymentMethods, user, names, lang }) => {
 
 
                 await sendinvoice(user?.email, createInvoice?.data);
+                localStorage.clear();
                 setLoading(true);
                 router.push(`/${lang}/invoice/${createInvoice?.data?._id}`);
             }
