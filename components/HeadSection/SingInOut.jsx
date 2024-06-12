@@ -6,11 +6,11 @@ const SingInOut = async ({ names, lang }) => {
 
 
     if (session === null) {
-        return <Link href={`${lang}/authentication/login`} className="text-gray-200 hover:text-white transition">{names.login}</Link>
+        return <Link href={`/${lang}/authentication/login`} className="text-gray-200 hover:text-white transition">{names.login}</Link>
     }
 
     return (
-        <Link href={`${lang}/authentication/singOut`} className="text-gray-200 hover:text-white transition">{names.logout}</Link>
+        <Link href={`/${lang}/authentication/singOut`} className="text-gray-200 hover:text-white transition">{names.logout}</Link>
     );
 };
 
