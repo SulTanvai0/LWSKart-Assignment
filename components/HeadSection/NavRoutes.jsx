@@ -14,7 +14,7 @@ const NavRoutes = ({ navRoutes, lang }) => {
                 const isSame = DPath === `/${lang}${route.link}`;
 
                 return (
-                    <Link key={route.navId} href={`/${lang}${route.link}`} className={`${isSame ? "text-[#fd3d57]" : "text-gray-200"} hover:text-white transition`}>
+                    <Link key={route.navId} href={`/${lang}/${route.link}`} className={`${isSame ? "text-[#fd3d57]" : "text-gray-200"} hover:text-white transition`}>
                         {route.name}
                     </Link>
                 );
