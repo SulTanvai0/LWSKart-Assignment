@@ -27,7 +27,7 @@ export const handelAddToCart = async (productId, userId, router) => {
         });
     }
 
-    const addToCartListPromise = fetch(`${process.env.LWSKART_URl}/api/cartListControl`, {
+    const addToCartListPromise = fetch(`${process.env.NEXT_PUBLIC_LWSKART_API_URl}/cartListControl`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ export const handelAddToCart = async (productId, userId, router) => {
         const res = await response.json();
 
         if (res?.status === 200) {
-            const getWishRes = await fetch(`${process.env.LWSKART_URl}/api/wishListControl?Id=${productId}`);
+            const getWishRes = await fetch(`${process.env.NEXT_PUBLIC_LWSKART_API_URl}/wishListControl?Id=${productId}`);
             const wishRes = await getWishRes.json();
 
             if (wishRes?.data) {
