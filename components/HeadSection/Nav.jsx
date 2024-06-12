@@ -22,7 +22,7 @@ const Nav = async ({ lang }) => {
 
 
     const navRoutes = [
-        { navId: "01", link: "/", name: navBar.home },
+        { navId: "01", link: "", name: navBar.home },
         { navId: "02", link: "/shop", name: navBar.shop },
         { navId: "03", link: "/aboutus", name: navBar.about },
         { navId: "04", link: "/contactus", name: navBar.contact, },
