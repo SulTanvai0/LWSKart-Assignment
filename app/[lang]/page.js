@@ -20,7 +20,8 @@ export default function Homepage({ params: { lang } }) {
       <Category lang={lang} />
       <Arrival lang={lang} /> 
       <Ads />
-      <Trending lang={lang} />
+     {/*  
+      <Trending lang={lang} /> */}
     </>
   );
 }
