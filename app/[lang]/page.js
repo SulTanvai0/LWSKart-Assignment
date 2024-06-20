@@ -20,11 +20,11 @@ export default function Homepage({ params: { lang } }) {
       <Features lang={lang} />
       {console.log("Features section loaded")}
       <Category lang={lang} />
-      {console.log("Arrival section loaded")}
-      <Arrival lang={lang} />
+      {/* {console.log("Arrival section loaded")}
+      <Arrival lang={lang} /> */}
       <Ads />
-      <Trending lang={lang} />
-      {console.log("Trending section loaded")}
+     {/*  <Trending lang={lang} />
+      {console.log("Trending section loaded")} */}
     </>
   );
 }
