@@ -13,7 +13,7 @@ const Arrival = async ({ lang }) => {
         }
 
         const Products = await fetchData.json();
-        console.log(Products)
+        console.log(Products?.data)
 
         const { newArrival, noFound } = await getDictionary(lang);
 
