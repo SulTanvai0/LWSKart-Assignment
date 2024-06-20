@@ -4,7 +4,7 @@ import Card from "../shared/Card/Card";
 const Trending = async ({ lang }) => {
 
     const fetchData = await fetch(
-        `${process.env.NEXT_PUBLIC_LWSKART_API_URl}/getProductsByFiledName&FiledValue?filedname=isTrending&filedvalue=true`
+        `https://lws-kart-assignment.vercel.app/api/getProductsByFiledName&FiledValue?filedname=isTrending&filedvalue=true`
     );
 
     const Products = await fetchData.json();
