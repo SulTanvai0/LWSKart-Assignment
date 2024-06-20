@@ -7,11 +7,13 @@ const Arrival = async ({ lang }) => {
             `https://lws-kart-assignment.vercel.app/api/getProductsByFiledName&FiledValue?filedname=NewProduct&filedvalue=true`
         );
 
+
         if (!fetchData.ok) {
             throw new Error('Network response was not ok');
         }
 
         const Products = await fetchData.json();
+        console.log(Products)
 
         const { newArrival, noFound } = await getDictionary(lang);
 
