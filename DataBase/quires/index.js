@@ -304,3 +304,15 @@ export async function postInvoice(invoiceObj) {
     console.error("Error createAddress:", error);
   }
 }
+export async function getArrivalData() {
+  try {
+    const request = await fetch(
+      `${localApi}/getProductsByFiledName&FiledValue?filedname=NewProduct&filedvalue=true`
+    );
+    const result = await request.json();
+
+    return result?.data;
+  } catch (err) {
+    console.log("err in getArrivalData : ", err.message);
+  }
+}
