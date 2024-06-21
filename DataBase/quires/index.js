@@ -311,7 +311,8 @@ export async function getArrivalData() {
     );
     const result = await request.json();
 
-    return result?.data;
+    return result?.data || [];
+    
   } catch (err) {
     console.log("err in getArrivalData : ", err.message);
   }
