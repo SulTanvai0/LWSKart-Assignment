@@ -13,7 +13,7 @@ const Nav = async ({ lang }) => {
 
     const navItems = [
         { navId: "01", link: "/shop?category=Sofa", name: category.Sofa, image: "/assets/images/icons/sofa.svg" },
-        { navId: "02", link: "/shop?category=livingRoom", name: category.LivingRoom, image: "/assets/images/icons/terrace.svg" },
+        { navId: "02", link: "/shop?category=Living%2520Room", name: category.LivingRoom, image: "/assets/images/icons/terrace.svg" },
         { navId: "03", link: "/shop?category=bedRoom", name: category.BedRoom, image: "/assets/images/icons/bed.svg" },
         { navId: "04", link: "/shop?category=Kitchen", name: category.Kitchen, image: "/assets/images/icons/office.svg" },
         { navId: "05", link: "/shop?category=outdoor", name: category.Outdoor, image: "/assets/images/icons/outdoor-cafe.svg" },
