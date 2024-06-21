@@ -12,7 +12,7 @@ const Category = async ({ lang }) => {
         { id: "02", name: category.Mattress, link: "Mattress", image: "/assets/images/category/category-2.jpg" },
         { id: "03", name: category.Outdoor, link: "Outdoor", image: "/assets/images/category/category-3.jpg" },
         { id: "04", name: category.Sofa, link: "Sofa", image: "/assets/images/category/category-4.jpg" },
-        { id: "05", name: category.LivingRoom, link: "Living Room", image: "/assets/images/category/category-5.jpg" },
+        { id: "05", name: category.LivingRoom, link: "Living%20Room", image: "/assets/images/category/category-5.jpg" },
 
         { id: "06", name: category.Kitchen, link: "Kitchen", image: "/assets/images/category/category-6.jpg" },
     ];
@@ -34,7 +34,7 @@ const Category = async ({ lang }) => {
                                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                 />
                             </div>
-                            <Link href={`${lang}/category/${cate.link}`} className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-opacity-20 to-gray-500 to-opacity-40 flex items-center justify-center text-3xl text-[#fd3d57] font-roboto font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <Link href={`/${lang}/shop?category=${cate.link}`} className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-opacity-20 to-gray-500 to-opacity-40 flex items-center justify-center text-3xl text-[#fd3d57] font-roboto font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 
                                 {cate.name}
 
