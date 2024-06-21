@@ -18,9 +18,9 @@ export default function Homepage({ params: { lang } }) {
       <HerSection lang={lang} />
       <Features lang={lang} />
       <Category lang={lang} />
-      <Arrival lang={lang} /> 
+     {/*  <Arrival lang={lang} /> */}
       <Ads />
-     {/*  
+      {/*  
       <Trending lang={lang} /> */}
     </>
   );
