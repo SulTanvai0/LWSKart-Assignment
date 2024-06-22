@@ -76,6 +76,7 @@
     "addressBook": "ঠিকানা তালিকা",
     "seeInvoice": "চালান দেখুন",
     "edit": "সম্পাদনা",
+    "paymentMethods" : "Payment Methods",
     "address": {
       "name": "নাম",
       "street": "রাস্তা",

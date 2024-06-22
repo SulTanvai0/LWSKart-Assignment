@@ -75,6 +75,7 @@
     "addressBook": "Address Book",
     "seeInvoice": "See Invoice",
     "edit": "edit",
+    "paymentMethods" : "Payment Methods",
     "address": {
       "name": "Name",
       "street": "Street",
