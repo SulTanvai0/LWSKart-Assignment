@@ -12,7 +12,7 @@ const AddPaymentMethodForm = ({ onClose, userId }) => {
     const handleAddMethod = async (formData) => {
         const cardInfo = { userId, ...formData };
 
-        const request = await fetch(`${process.env.LWSKART_URl}/api/controlpaymentMethods`, {
+        const request = await fetch(`https://lws-kart-assignment.vercel.app/api/controlpaymentMethods`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
